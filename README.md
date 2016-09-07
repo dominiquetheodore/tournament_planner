@@ -50,7 +50,7 @@ checks if two players have played each other before to prevent rematches
 
 
 ###checkPairing()
-jk
+go through the standings table to find a valid match for a player 
 
 ### reportMatch()
 record the outcome of a match in the matches table
