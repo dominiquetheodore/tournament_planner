@@ -151,9 +151,10 @@ def swissPairings():
     pairings = []
     standings = playerStandings()
     while len(standings) > 1:
-        # match top players in the standings table until list is empty
+        # match players in the standings table until list is empty
         validMatch = checkPairing(0, 1, standings)
         player1 = standings.pop(0)
         player2 = standings.pop(validMatch - 1)
+        # add the pair of players to the list of tuples
         pairings.append((player1[0], player1[1], player2[0], player2[1]))
     return pairings
